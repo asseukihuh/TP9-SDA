@@ -23,6 +23,7 @@ int main()
 {
 T_File mafile;
 T_Pile mapile;
+T_Elt elmt;
 int chx;
 // int taille;
 //char chaine[20];
@@ -32,12 +33,13 @@ do
 chx=menu();
 switch (chx)
 	{
-	case 1 :  
+	case 1 : 
+		testFile(&mafile, &elmt); 
 		//testez toutes vos fonctions par un jeu de test de votre choix
 		//testPile(&mapile); //TP9 partie 1 : à ecrire 
 		break;
-	case 2 : //testez toutes vos fonctions par un jeu de test de votre choix
-		// testFile(&mafile); //TP9 partie 1 : à ecrire 
+	case 2 : 
+		
 		break; 
 	case 3 : 
 		//scanf("%s",chaine); //une chaine de longueur <=MAX

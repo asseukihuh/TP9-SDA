@@ -1,6 +1,6 @@
 #include "es.h" 	 
 
-#define MAX 10 
+#define MAX 5 
 
 
 typedef struct  
@@ -17,5 +17,8 @@ int fileVide(const  T_File *); // qd Tete == 0
 int filePleine(const  T_File *); // qd MAX elts dans la file 
 T_Elt  premier(T_File *); //valeur en tete de file
 void afficherFile(T_File *); 
+int menuFile();
+void testFile(T_File * mafile, T_Elt * elmt);
+
 
 
