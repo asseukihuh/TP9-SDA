@@ -111,13 +111,20 @@ int testPile(T_Pile * P,T_Elt element)
 				printf("la pile n'est pas pleine !");
 			break; 
 		case 4 : 
-			printf("\n");
-			printf("saisir un element : ");
-			saisirElt(&element);
-			empiler(P, element);
+			if(pilepleine(P)){
+				printf("La pile est pleine !");
+			}else{
+				printf("\n");
+				printf("saisir un element : ");
+				saisirElt(&element);
+				empiler(P, element);
+			}
 			break;
-		case 5 : 
-			depiler(P, &element);
+		case 5 :
+			if(pilevide(P))
+				printf("La pile est vide !");
+			else
+				depiler(P, &element);
 			break;
 		case 6 : 
 			printf("Le sommet de la pile est : ");
