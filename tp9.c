@@ -63,7 +63,7 @@ switch (chx)
 		//testPile(&mapile); //TP9 partie 1 : à ecrire 
 		break;
 	case 2 : 
-	testPile(&mapile);
+	testPile(&mapile,&element);
 		
 		break; 
 	case 3 : 
@@ -130,9 +130,10 @@ int testPile(T_Pile * P,T_Elt * element)
 			printf("Affichage de la pile : ");
 			afficherPile(P);
 			break;
-	}while(chx2!=0);
+	}
+}while(chx2!=0);
 	
 	printf("\nau plaisir de vous revoir ...\n");
 	return 0;
-	}
+	
 }
